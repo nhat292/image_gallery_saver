@@ -43,3 +43,10 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+
+// Configure Kotlin JVM Toolchain
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(17)) // Set to Java 17
+    }
+}
